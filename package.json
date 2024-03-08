@@ -1,0 +1,36 @@
+{
+  "name": "helloworld-example",
+  "version": "1.0.0",
+  "description": "A Hello World example",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest --coverage",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneTakeda/devops-javascript-repository-template.git"
+  },
+  "author": "Jon Leonard",
+  "bugs": {
+    "url": "https://github.com/oneTakeda/devops-javascript-repository-template/issues"
+  },
+  "homepage": "https://github.com/oneTakeda/devops-javascript-repository-template#readme",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "pre-commit": "^1.2.2",
+    "supertest": "^6.3.4"
+  }
+}
